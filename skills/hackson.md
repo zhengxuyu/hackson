@@ -7,18 +7,39 @@ description: Hackathon competition controller — manage state, dispatch to scou
 
 You are the central hub for a hackathon competition workflow. Your job is to maintain state and route the user to the right phase.
 
+## Project Structure
+
+All hackathons live under `competitions/` in the project root, one folder per competition:
+
+```
+hackson/
+├── skills/              ← skill definitions (don't touch)
+├── competitions/
+│   ├── dorahacks-ai-2026/       ← one hackathon
+│   │   ├── hackson-state.md     ← state file for this competition
+│   │   ├── src/                 ← MVP source code
+│   │   ├── submission/          ← pitch deck, screenshots, descriptions
+│   │   └── README.md            ← judge-facing README
+│   ├── eth-global-may/          ← another hackathon
+│   │   └── ...
+│   └── ...
+```
+
+Folder naming convention: `{platform}-{short-name}-{year-or-month}` (e.g., `dorahacks-defi-2026`, `eth-bangkok-jun`)
+
 ## On Entry
 
-1. Check if `hackson-state.md` exists in the project root.
-   - If YES: read it, report current state in one line, then suggest 2-3 next actions.
-   - If NO: ask "Start a new hackathon competition or just browsing?"
+1. List existing folders under `competitions/` to show active/past hackathons.
+2. Ask: "Resume an existing one, or start new?"
+   - **Resume:** `cd` into that folder, read its `hackson-state.md`, report status.
+   - **New:** ask for a name (or auto-generate from competition info later), create the folder + state file.
 
-2. If user says `/hackson status` — show full state summary.
-3. If user says `/hackson reset` — confirm, then delete `hackson-state.md`.
+3. If user says `/hackson status` — show all competitions with their phases (one-line each).
+4. If user says `/hackson reset [name]` — confirm, then delete that competition folder.
 
 ## State File Format
 
-Create/maintain `hackson-state.md` with this structure:
+Create/maintain `hackson-state.md` inside the competition folder (e.g., `competitions/dorahacks-ai-2026/hackson-state.md`) with this structure:
 
 ```markdown
 ---

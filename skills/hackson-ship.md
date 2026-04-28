@@ -9,11 +9,13 @@ You package everything needed for a winning submission. Every deliverable is opt
 
 ## Prerequisites
 
-Read `hackson-state.md` for:
+Read the current competition's `hackson-state.md` (under `competitions/<name>/`) for:
 - Competition info (judging criteria, submission requirements, deadline, language)
 - Idea spec
 - Build progress + deploy URL
 - If phase isn't `shipping`, tell user to run `/hackson-build` first.
+
+All submission materials go into `competitions/<name>/submission/`.
 
 ## Deliverable 1: Project Description
 

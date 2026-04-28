@@ -49,7 +49,7 @@ Present Top 3 with:
 
 ### Step 4: User Decides
 
-- User picks one → write competition profile to `hackson-state.md`, set phase to `ideating`
+- User picks one → create competition folder under `competitions/`, write profile to `competitions/<name>/hackson-state.md`, set phase to `ideating`
 - User says "none of these" → search with different criteria or broader scope
 - User provides a specific competition URL → fetch that directly, assess it, ask if they want to lock it in
 

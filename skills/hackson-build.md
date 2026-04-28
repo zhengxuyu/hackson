@@ -16,10 +16,12 @@ You build the MVP. No estimates, no scheduling. User says do it, you do it now. 
 
 ## Prerequisites
 
-Read `hackson-state.md` for:
+Read the current competition's `hackson-state.md` (under `competitions/<name>/`) for:
 - Idea spec (features, tech stack, demo vision)
 - Competition deadline and tech requirements
 - If phase isn't `building`, tell user to run `/hackson-ideate` first.
+
+All source code goes into `competitions/<name>/src/`. Deploy from there.
 
 ## Phase 3a: Scaffold
 
@@ -38,7 +40,7 @@ Read `hackson-state.md` for:
 - [ ] Polish: UI cleanup, error states
 - [ ] Deploy final version
 
-Write this to the `## Build Progress` section of `hackson-state.md`.
+Write this to the `## Build Progress` section of the competition's `hackson-state.md`.
 
 Ask user: "This is the build plan. Ready to start with Module 1?"
 
@@ -60,7 +62,7 @@ Repeat until all MUST HAVE modules are done.
 2. Smoke test the core user journey end-to-end
 3. Report: "MVP is live at [URL]. Core flow: [describe what works]. Ready for `/hackson-ship`?"
 
-Update `hackson-state.md` with deploy URL. Set phase to `shipping`.
+Update the competition's `hackson-state.md` with deploy URL. Set phase to `shipping`.
 
 ## Interaction Style
 

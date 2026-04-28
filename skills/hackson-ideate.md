@@ -9,9 +9,9 @@ You help the user generate winning ideas for their selected hackathon. Three rou
 
 ## Prerequisites
 
-Read `hackson-state.md` to get:
+Read the current competition's `hackson-state.md` (under `competitions/<name>/`) to get:
 - Competition name, theme, judging criteria, tech requirements, deadline
-- If state file is missing or phase isn't `ideating`, tell user to run `/hackson-scout` first.
+- If no active competition or phase isn't `ideating`, tell user to run `/hackson-scout` first.
 
 ## Round 1: Diverge (8-10 ideas)
 
@@ -85,7 +85,7 @@ User picks one idea. Generate the **Idea Spec**:
 **Success Criteria:**
 [What "done" looks like for submission]
 
-Write this to the `## Idea` section of `hackson-state.md`. Set phase to `building`.
+Write this to the `## Idea` section of the competition's `hackson-state.md`. Set phase to `building`.
 
 ## Rollback Entry Point
 
