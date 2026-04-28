@@ -10,7 +10,7 @@ This repo is both a skill suite AND a workspace for all hackathon competitions. 
 
 ```
 hackson/
-├── skills/                          ← Skill definitions (the methodology)
+├── .claude/skills/                  ← Skill definitions (auto-discovered by Claude Code)
 │   ├── hackson.md                   ← Hub controller
 │   ├── hackson-scout.md             ← Phase 1: research & select
 │   ├── hackson-ideate.md            ← Phase 2: idea generation
